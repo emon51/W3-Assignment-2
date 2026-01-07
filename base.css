@@ -1,0 +1,846 @@
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+}
+
+.logo-title {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.logo-subtitle {
+    margin: 2px 0 0;
+    font-size: 8px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.list-btn {
+    background-color:white ;
+    color: black;
+    border: none;
+}
+
+.find-btn {
+    background-color:teal ;
+    color: white;
+    border: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+
+.sections {
+    background-color: whitesmoke;
+    padding: 10px 15px;
+}
+
+
+/* Main part */
+.main {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Left side */
+.left {
+    flex: 3;
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+
+/* Right side */
+.right {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* MESSAGE BOX */
+.message-box {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: auto;
+    border: 1px solid lightgreen;
+}
+
+.message-icon {
+  background-color: green;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 40%;
+  margin-right: 10px;
+  text-align: center;
+  margin-left: 2%;
+}
+
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+}
+
+
+.info {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+
+.highlights {
+    margin-top: 5%;
+}
+
+.highlights h2 {
+    margin-bottom: 16px;
+}
+
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.card {
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding: 16px 16px 16px 48px;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.card .icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: teal;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.card h3 {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: dimgray;
+}
+
+
+
+.amenities-facility {
+  margin-top: 5%;
+  font-family: sans-serif;
+  border: 1px solid cadetblue;
+  padding: 15px;
+}
+
+.amenities-facility h2 {
+  margin: 24px 0 8px;
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 16px;
+}
+
+.amenities-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.amenities-grid li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+
+
+.facility-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.facility-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.facility-grid li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+
+.destination {
+  margin-top: 5%;
+  display: flex;
+  gap: 20px;
+  font-family: sans-serif;
+  padding: 15px;
+  border: 1px solid cadetblue;
+}
+
+.content {
+  flex: 1;
+}
+
+.map {
+  flex: 1;
+  background: cadetblue;
+  align-items: center;
+  justify-content: center;
+}
+
+.content p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.content ul {
+  padding-left: 16px;
+}
+
+.content li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.map img {
+  width: 100%;
+  height: 100%;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.booking {
+  margin-top: 5%;
+  padding: 15px;
+  background: whitesmoke;
+  font-family: sans-serif;
+  border: 1px solid cadetblue;
+
+}
+
+
+
+.booking ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booking li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+
+.booking ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booking li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+
+/* Right Contents */
+
+.right-main {
+  background-color: white;
+}
+
+.price {
+  background-color: whitesmoke;
+}
+
+.price-amount {
+  font-weight: bold; 
+  font-size: 28px;                                                                                                ;
+}
+
+.price-text {
+  font-size: 14px;
+  color: gray;
+}
+
+
+.check {
+  display: flex;                                                                                                                                                                                                                                                                                                                             
+  gap: 5px;
+}
+
+.check-in {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5%;
+  border: 2px solid gray;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+
+.check-in-text {
+  color: gray;
+  font-size: small;
+}
+
+.check-in-date {
+  color: darkolivegreen;
+  font-size: medium;
+}
+
+
+.guest {
+  display: flex;
+  margin-top: 2%;
+  flex-direction: column;
+  border: 2px solid gray;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5%;
+  gap: 5px;
+}
+
+.guest-title{
+  color: gray;
+  font-size: small;
+}
+
+.guest-info {
+  color: darkolivegreen;
+  font-size: medium;
+}
+
+
+.right {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+
+.price2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  gap: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.price2 .info {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.info-text {
+  font-weight: bold;
+}
+
+.info-amount {
+  font-weight: bold;
+}
+
+
+.availability {
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.check-btn {
+  display: block;
+  padding: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: teal;
+  color: white;
+  border-radius: 8px;
+}
+
+.redirect {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+
+/* Fotter */
+
+.footer {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  padding: 32px;
+  text-align: left;
+}
+
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+
+.footer-text {
+  margin: 24px 0;
+  max-width: 600px;
+  color: lightgray;
+}
+
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 8px;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+
+.footer-bottom {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid gray;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: lightgray;
+}
+
+.footer-bottom a {
+  color: white;
+}
+
+.owner-2025 {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+/* Left Content Policies */ 
+
+.policies {
+  margin-top: 5%;
+  padding: 15px;
+  background-color: whitesmoke;
+  border: 1px solid cadetblue;
+  font-family: sans-serif;
+}
+
+.policies h2 {
+  margin-bottom: 16px;
+}
+
+
+.policy-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.policy-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 32%;   /* 100 / 3 = 33.33% == 32%, 3 boxes per row */
+}
+
+
+
+.icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+
+.policy-item h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+}
+
+.policy-item p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+
+
+
+/* DESKTOP's Breakpoint */
+
+@media (min-width: 1200px) {
+
+  .page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  
+  .main {
+    align-items: flex-start;
+  }
+
+
+  .right {
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+  }
+
+
+  .gallery img {
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+  }
+
+  
+  .destination,
+  .amenities-facility,
+  .booking {
+    margin-bottom: 40px;
+  }
+
+
+  .footer {
+    clear: both;
+  }
+
+
+  
+  .policy-grid {
+    justify-content: space-between;
+  }
+
+  .policy-item {
+    width: calc(33.333% - 14px); 
+  }
+}
+
+
+
+/* MOBILE's Breakpoint*/
+
+
+@media (max-width: 480px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  
+  .main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .right {
+    display: none;
+  }
+  
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  
+  .info {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  
+  .card-list {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+
+  .amenities-grid,
+  .facility-grid {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  
+  .destination {
+    flex-direction: column;
+  }
+
+  .map {
+    height: 200px;
+  }
+
+  
+  .check {
+    flex-direction: column;
+  }
+
+  
+  .check-btn,
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  .footer-columns {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .owner-2025 {
+    text-align: left;
+  }
+
+
+
+.policy-grid {
+  flex-direction: column;
+}
+
+.policy-item {
+  width: 100%;
+}
+
+}
+
+
+
+
+/* TABLET's Breakpoint */
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+  body {
+    overflow-x: hidden;
+  }
+
+  
+  .header {
+    padding: 16px 24px;
+  }
+
+  .menu {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  
+  .main {
+    gap: 20px;
+    padding: 16px 24px;
+    align-items: flex-start;
+  }
+
+  .left {
+    flex: 2;
+    padding: 16px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  
+  .gallery img {
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+  }
+
+  
+  .card {
+    width: 48%;
+  }
+
+  
+  .amenities-grid,
+  .facility-grid {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  
+  .destination {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .map {
+    min-height: 240px;
+  }
+
+  
+  .check {
+    gap: 8px;
+  }
+
+  
+  .check-btn {
+    padding: 14px;
+  }
+
+  
+  .footer {
+    padding: 24px;
+  }
+
+  .footer-columns {
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    justify-content: space-between;
+  }
+
+
+.policy-grid {
+  justify-content: space-between;
+}
+
+.policy-item {
+  width: calc(50% - 10px); 
+}
+
+}
+
+
+
+
+
+
+
+
