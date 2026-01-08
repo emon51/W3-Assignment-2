@@ -123,11 +123,100 @@ body {
 }
 
 
-.gallery img {
+/* GALLERY - DESKTOP/TABLET DEFAULT */
+.gallery {
+    position: relative;
+}
+
+.gallery-slider {
+    position: relative;
     width: 100%;
     height: 300px;
-    background-color: gray;
+    overflow: hidden;
 }
+
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-img.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Hide dots by default (desktop/tablet) */
+.gallery-dots {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    gap: 8px;
+    z-index: 5;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+
+
+/* DESCRIPTION SECTION */
+.description {
+    margin-top: 20px;
+}
+
+.description h2 {
+    margin-bottom: 10px;
+}
+
+.description-text {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.description-extra {
+    margin: 10px 0;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.description-extra.expanded {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.show-more-btn {
+    color: teal;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.show-more-btn:hover {
+    text-decoration: underline;
+}
+
 
 
 .info {
@@ -574,6 +663,15 @@ body {
     margin: 0 auto;
   }
 
+.gallery-slider {
+    height: auto;
+  }
+
+  .gallery-img {
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+  }
   
   .main {
     align-items: flex-start;
@@ -733,6 +831,29 @@ body {
   width: 100%;
 }
 
+.gallery-slider {
+    height: 260px;
+  }
+
+  .gallery-img {
+    height: 260px;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .gallery-img.active {
+    opacity: 1;
+    position: relative;
+  }
+
+  .gallery-dots {
+    display: flex;
+  }
+
+  .view-btn {
+    display: none;
+  }
+
 }
 
 
@@ -746,6 +867,16 @@ body {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   body {
     overflow-x: hidden;
+  }
+
+  .gallery-slider {
+    height: auto;
+  }
+
+  .gallery-img {
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
   }
 
   
@@ -838,9 +969,421 @@ body {
 }
 
 
+/* ================================================== */
+
+
+/* GALLERY */
+.gallery {
+  position: relative;
+}
+
+.view-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  border: 2px solid white;
+  background-color: black;
+  padding: 8px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* MODAL */
+
+/* MODAL BACKDROP */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 999;
+}
+
+/* MODAL CENTERING */
+.modal-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* IMAGE + ARROWS CONTAINER */
+.slider-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1000px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE */
+.slide {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* NAV ARROWS */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 36px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-btn:disabled:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+/* Keep arrows close to image */
+.nav-btn.left {
+  left: -45px;
+}
+
+.nav-btn.right {
+  right: -45px;
+}
+
+/* CLOSE BUTTON */
+.close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Okay till now */
+
+/* Date Picker */
+.check-in-date {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: darkolivegreen;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.check-in-date::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+/* Guest Modal */
+.guest-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.guest-modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.guest-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.guest-modal-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.guest-close {
+  font-size: 28px;
+  cursor: pointer;
+  color: gray;
+  line-height: 1;
+}
+
+.guest-close:hover {
+  color: black;
+}
+
+.guest-modal-body {
+  padding: 20px;
+}
+
+.guest-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.guest-row:last-child {
+  border-bottom: none;
+}
+
+.guest-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guest-label strong {
+  font-size: 16px;
+  color: darkgray;
+}
+
+.guest-label small {
+  font-size: 13px;
+  color: gray;
+}
+
+.guest-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.guest-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid teal;
+  background: white;
+  color: teal;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.guest-btn:hover {
+  background: teal;
+  color: white;
+}
+
+.guest-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: white;
+  color: white;
+}
+
+.guest-btn:disabled:hover {
+  background: white;
+  color: white;
+}
+
+.guest-count {
+  min-width: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.guest {
+  cursor: pointer;
+}
+
+.guest:hover {
+  background-color: white;
+  transition: background-color 0.2s;
+}
+
+
+/* More vacation rentals */
+.more-rentals {
+  background-color: white;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+.more-rentals h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.rental-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+.rental-card {
+  min-width: 280px;
+  flex-shrink: 0;
+  background: white;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rental-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rental-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.rental-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+.favorite-btn .heart {
+  font-size: 20px;
+  color: darkgray;
+  transition: color 0.2s;
+}
+
+.favorite-btn.active .heart {
+  color: red;
+  content: "♥";
+}
+
+.rental-info {
+  padding: 15px;
+}
+
+.rental-location {
+  font-size: 12px;
+  color: cadetblue;
+  margin: 0 0 8px 0;
+}
+
+.rental-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: gray;
+  line-height: 1.4;
+}
+
+.rental-details {
+  font-size: 12px;
+  color: gray;
+  margin: 0 0 8px 0;
+}
+
+.rental-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: teal;
+  margin: 0 0 12px 0;
+}
+
+.quick-dates-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quick-dates-btn:hover {
+  background-color: darkcyan;
+}
+
+.view-all-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-all-btn:hover {
+  background-color: darkgray;
+}
 
 
 
-
-
-
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .rental-card {
+    min-width: 240px;
+  }
+  
+  .more-rentals h2 {
+    font-size: 22px;
+  }
+}

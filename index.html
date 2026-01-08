@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html & css project</title>
     <link rel="stylesheet" href="base.css">
 </head>
+
 <body>
-    
+
     <!-- HEADER -->
     <header class="header">
         <div class="logo">
@@ -18,22 +20,16 @@
         <nav class="menu">
             <button class="btn list-btn"><a href="#">LIST YOUR PROPERTY</a></button>
             <button class="btn find-btn"><a href="#">FIND YOUR STAY</a></button>
-            
         </nav>
     </header>
-
-
-    
 
     <section class="sections">
         Park Shore Rentals > USA > Florida > Naples > Park Shore
     </section>
 
-    
     <!-- Main layout -->
     <main class="main">
 
-        
         <!-- left part -->
         <section class="left">
             <h1>Shoreline Towers 1021 Gulf-Front Condo</h1>
@@ -46,31 +42,60 @@
             </div>
 
             <div class="gallery">
-                <img src="static/shorline-tower-beach-front.jpg" alt="image not found">
+                <div class="gallery-slider">
+                    <img id="mainImage" src="static/shorline-tower-beach-front.jpg" alt="image not found" class="gallery-img active">
+                    <img src="static/shoreline1.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline2.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline3.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline4.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline5.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline6.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline7.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline8.jpg" alt="image not found" class="gallery-img">
+                    <img src="static/shoreline9.jpg" alt="image not found" class="gallery-img">
+
+                </div>
+                <div class="gallery-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                    <span class="dot" data-index="6"></span>
+                    <span class="dot" data-index="7"></span>
+                    <span class="dot" data-index="8"></span>
+                    <span class="dot" data-index="9"></span>
+                </div>
+                <button id="viewAllBtn" class="view-btn">VIEW ALL 10 IMAGES</button>
             </div>
 
-        
             <div class="description">
                 <h2>Beachfront Comfort with Gulf Views</h2>
-                <p>
-                    Welcome to Shoreline Towers 1021, a stunning Destin vacation rental that blends coastal charm with modern comfort right 
-                    for Florida's Emerald Coast.
+                <p id="descriptionText" class="description-text">
+                    Welcome to Shoreline Towers 1021, a stunning Destin vacation rental that blends coastal charm
+                    with modern comfort right for Florida's Emerald Coast.
                 </p>
-                <a href="#">Show more</a>
+                <p id="descriptionExtra" class="description-extra">
+                    This beautifully appointed gulf-front condo offers breathtaking views of the turquoise waters
+                    and sugar-white sands that make this area famous. Inside, you'll find a spacious living area
+                    with comfortable furnishings, a fully equipped kitchen with modern appliances, and a master
+                    bedroom with plush bedding. The private balcony is perfect for morning coffee or evening
+                    sunsets. Located in the heart of Destin, you're just minutes away from world-class dining,
+                    shopping, and entertainment. Whether you're here for a romantic getaway or a family vacation,
+                    Shoreline Towers 1021 provides the perfect home base for your Florida adventures.
+                </p>
+                <a href="#" id="toggleDescription" class="show-more-btn">Show more</a>
             </div>
-
 
             <!-- Message-Box -->
             <div class="message-box">
                 <span class="message-icon">✓</span>
                 <p>
-                    Since 1994, Owner Direct has helped travelers find quality vacation rentals with confidence through a simple and secure
-                    booking experience                
+                    Since 1994, Owner Direct has helped travelers find quality vacation rentals with confidence through
+                    a simple and secure booking experience
                 </p>
             </div>
-
-
-
 
             <!-- Highlights -->
             <div class="highlights">
@@ -92,7 +117,8 @@
                         <div class="card-content">
                             <h3>Spacious Comfort</h3>
                             <p>
-                                Three bedrooms and open living areas provide plenty of space for families or groups of up to 8.
+                                Three bedrooms and open living areas provide plenty of space for families or groups of
+                                up to 8.
                             </p>
                         </div>
                     </article>
@@ -112,20 +138,19 @@
                         <div class="card-content">
                             <h3>Resort Amenities</h3>
                             <p>
-                                Swim, play or unwind with access to heated pool, fitness center, sauna and outdoor grills.
+                                Swim, play or unwind with access to heated pool, fitness center, sauna and outdoor
+                                grills.
                             </p>
                         </div>
                     </article>
                 </div>
             </div>
 
-
-
             <div class="amenities-facility">
                 <h2>Amenities</h2>
                 <p class="desc">
-                    Enjoy beachfront relaxation with complimentary breakfast, on-site parking, free Wi-Fi, golf nearby and 
-                    concierge services to enhance your stay.
+                    Enjoy beachfront relaxation with complimentary breakfast, on-site parking, free Wi-Fi, golf nearby
+                    and concierge services to enhance your stay.
                 </p>
 
                 <div class="amenities-grid">
@@ -198,15 +223,14 @@
                 </div>
             </div>
 
-
             <div class="destination">
                 <div class="content">
                     <h2>Why Travelers Love Staying in Destin</h2>
                     <h4>Why Choose Destin for Your Next Escape</h4>
                     <p>
                         Known as the "World's Luckiest Fishing Village," Destin offers crystal-clear
-                        waters, family attractions and endless outdoor fun. From deep-sea fishing and bboating to boutique shopping and dining, 
-                        you'll find something for every kind of traveler.
+                        waters, family attractions and endless outdoor fun. From deep-sea fishing and bboating to
+                        boutique shopping and dining, you'll find something for every kind of traveler.
                     </p>
 
                     <ul>
@@ -242,148 +266,207 @@
                 <ul>
                     <li>✓ This Destin vacation condo accommodates up to 8 guests with a 3-night minimum stay.</li>
                     <li>✓ Check-in is at 4 PM; check-out is at 10 AM. Guests must be at least 25 years old to book.</li>
-                    <li>✓ Booking is fast, secure and handled through Ownere Direct Vacation Rentals' trusted travel partners.</li>
+                    <li>✓ Booking is fast, secure and handled through Ownere Direct Vacation Rentals' trusted travel
+                        partners.</li>
                 </ul>
             </div>
 
             <div class="policies">
-
                 <h2>Policies</h2>
 
                 <div class="policy-grid">
 
                     <div class="policy-item">
-                    <img src="static/check-out.svg" alt="icon not found" class="icon">
-                    <div>
-                        <h4>Check-out</h4>
-                        <p>Check-out before 11:30 AM</p>
-                    </div>
-                    </div>
-
-                    <div class="policy-item">
-                    <img src="static/check-in.png" alt="icon not found" class="icon">
-                    <div>
-                        <h4>Check-in</h4>
-                        <p>Check-in time starts at 3:00 PM. Minimum check-in age: 18</p>
-                    </div>
+                        <img src="static/check-out.svg" alt="icon not found" class="icon">
+                        <div>
+                            <h4>Check-out</h4>
+                            <p>Check-out before 11:30 AM</p>
+                        </div>
                     </div>
 
                     <div class="policy-item">
-                    <img src="static/child.png" alt="icon not found" class="icon">
-                    <div>
-                        <h4>Child Policy</h4>
-                        <p>Children are welcome</p>
-                    </div>
-                    </div>
-
-                    <div class="policy-item">
-                    <img src="static/event.svg" alt="icon not found" class="icon">
-                    <div>
-                        <h4>Event Policy</h4>
-                        <p>No events allowed</p>
-                    </div>
+                        <img src="static/check-in.png" alt="icon not found" class="icon">
+                        <div>
+                            <h4>Check-in</h4>
+                            <p>Check-in time starts at 3:00 PM. Minimum check-in age: 18</p>
+                        </div>
                     </div>
 
                     <div class="policy-item">
-                    <img src="static/no-smoking.svg" alt="icon not found" class="icon">
-                    <div>
-                        <h4>Smoking Policy</h4>
-                        <p>Smoking is not permitted</p>
-                    </div>
+                        <img src="static/child.png" alt="icon not found" class="icon">
+                        <div>
+                            <h4>Child Policy</h4>
+                            <p>Children are welcome</p>
+                        </div>
                     </div>
 
                     <div class="policy-item">
-                    <img src="static/pet.svg" alt="icon not found" class="icon">
-                    <div>
-                        <h4>Pet Policy</h4>
-                        <p>Pets not allowed</p>
+                        <img src="static/event.svg" alt="icon not found" class="icon">
+                        <div>
+                            <h4>Event Policy</h4>
+                            <p>No events allowed</p>
+                        </div>
                     </div>
+
+                    <div class="policy-item">
+                        <img src="static/no-smoking.svg" alt="icon not found" class="icon">
+                        <div>
+                            <h4>Smoking Policy</h4>
+                            <p>Smoking is not permitted</p>
+                        </div>
+                    </div>
+
+                    <div class="policy-item">
+                        <img src="static/pet.svg" alt="icon not found" class="icon">
+                        <div>
+                            <h4>Pet Policy</h4>
+                            <p>Pets not allowed</p>
+                        </div>
                     </div>
 
                 </div>
-
             </div>
 
         </section>
 
-
- 
-
-
-        
         <!-- Right part -->
         <section class="right">
             <header class="price">
-                <span class="price-amount">USD $600</span>
-                <span class="price-text">AVG PER NIGHT</span>  
+                <span class="price-amount">USD $<span id="pricePerNight">600</span></span>
+                <span class="price-text">AVG PER NIGHT</span>
             </header>
 
-
             <div class="check">
-                <div class="check-in"> 
+                <div class="check-in">
                     <span class="check-in-text">CHECK-IN</span>
-                    <span class="check-in-date">19 FEB 2026</span>
+                    <input type="date" id="checkInDate" class="check-in-date" value="2026-02-19">
                 </div>
 
-                <div class="check-in"> 
+                <div class="check-in">
                     <span class="check-in-text">CHECK-OUT</span>
-                    <span class="check-in-date">21 FEB 2026</span>
+                    <input type="date" id="checkOutDate" class="check-in-date" value="2026-02-21">
                 </div>
             </div>
 
-            <div class="guest">
+            <div class="guest" id="guestSelector">
                 <span class="guest-title">GUESTS</span>
-                <span class="guest-info">3 Guests, 1 Infant, 1 Pet</span>
+                <span class="guest-info" id="guestDisplay">3 Guests, 1 Infant, 1 Pet</span>
             </div>
 
-
-             <!-- Message-Box -->
+            <!-- Message-Box -->
             <div class="message-box">
                 <span class="message-icon">✓</span>
-                <p>
-                    Dates selected are available              
-                </p>
+                <p>Dates selected are available</p>
             </div>
-
 
             <div class="price2">
                 <div class="info">
-                    <span class="info-text">
-                        PRICE PER NIGHT
-                    </span>
-
-                    <span class="info-amount">
-                        USD $600
-                    </span>
+                    <span class="info-text">PRICE PER NIGHT</span>
+                    <span class="info-amount">USD $<span id="displayPricePerNight">600</span></span>
                 </div>
 
                 <div class="info">
-                    <span class="info-text">
-                        TOTAL PRICE
-                    </span>
-
-                    <span class="info-amount">
-                        USD $600
-                    </span>
+                    <span class="info-text">TOTAL PRICE</span>
+                    <span class="info-amount">USD $<span id="totalPrice">1200</span></span>
                 </div>
             </div>
 
-
             <div class="availability">
-                <a href="#" class="check-btn">
-                    Check Availability
-                </a>
-
-                <p class="redirect">
-                    You will be redirected to <strong>Booking.com</strong>
-                </p>
+                <a href="#" class="check-btn">Check Availability</a>
+                <p class="redirect">You will be redirected to <strong>Booking.com</strong></p>
             </div>
-                                                                                            
-
         </section>
+
     </main>
 
+    <!-- More Vacation Rentals Section -->
+    <section class="more-rentals">
+        <h2>More Vacation Rentals in Destin</h2>
 
+        <div class="rental-grid">
+            <div class="rental-card">
+                <div class="rental-image">
+                    <img src="static/shorline-tower-beach-front.jpg" alt="Property 1">
+                    <button class="favorite-btn" data-property="1">
+                        <span class="heart">♡</span>
+                    </button>
+                </div>
+                <div class="rental-info">
+                    <p class="rental-location">2.0 Kilometers</p>
+                    <h3 class="rental-name">Lorem Ipsum Conveniencia Adejung Maca</h3>
+                    <p class="rental-details">Air Conditioner • Building Name •</p>
+                    <p class="rental-price">$2540</p>
+                    <button class="quick-dates-btn">QUICK DATES</button>
+                </div>
+            </div>
+
+            <div class="rental-card">
+                <div class="rental-image">
+                    <img src="static/shoreline1.jpg" alt="Property 2">
+                    <button class="favorite-btn" data-property="2">
+                        <span class="heart">♡</span>
+                    </button>
+                </div>
+                <div class="rental-info">
+                    <p class="rental-location">3.5 Kilometers</p>
+                    <h3 class="rental-name">Beach Paradise Resort</h3>
+                    <p class="rental-details">Ocean View • Pool Access •</p>
+                    <p class="rental-price">$3200</p>
+                    <button class="quick-dates-btn">QUICK DATES</button>
+                </div>
+            </div>
+
+            <div class="rental-card">
+                <div class="rental-image">
+                    <img src="static/shoreline2.jpg" alt="Property 3">
+                    <button class="favorite-btn" data-property="3">
+                        <span class="heart">♡</span>
+                    </button>
+                </div>
+                <div class="rental-info">
+                    <p class="rental-location">1.8 Kilometers</p>
+                    <h3 class="rental-name">Sunset Bay Cottage</h3>
+                    <p class="rental-details">Beach Access • WiFi •</p>
+                    <p class="rental-price">$1950</p>
+                    <button class="quick-dates-btn">QUICK DATES</button>
+                </div>
+            </div>
+
+            <div class="rental-card">
+                <div class="rental-image">
+                    <img src="static/shoreline3.jpg" alt="Property 4">
+                    <button class="favorite-btn" data-property="4">
+                        <span class="heart">♡</span>
+                    </button>
+                </div>
+                <div class="rental-info">
+                    <p class="rental-location">4.2 Kilometers</p>
+                    <h3 class="rental-name">Marina View Apartments</h3>
+                    <p class="rental-details">City Center • Parking •</p>
+                    <p class="rental-price">$2800</p>
+                    <button class="quick-dates-btn">QUICK DATES</button>
+                </div>
+            </div>
+
+            <div class="rental-card">
+                <div class="rental-image">
+                    <img src="static/shoreline4.jpg" alt="Property 5">
+                    <button class="favorite-btn" data-property="5">
+                        <span class="heart">♡</span>
+                    </button>
+                </div>
+                <div class="rental-info">
+                    <p class="rental-location">2.7 Kilometers</p>
+                    <h3 class="rental-name">Coastal Dream Villa</h3>
+                    <p class="rental-details">Private Pool • Garden •</p>
+                    <p class="rental-price">$4500</p>
+                    <button class="quick-dates-btn">QUICK DATES</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="view-all-btn">VIEW ALL RENTALS</button>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -391,115 +474,197 @@
 
         <nav class="footer-nav">
             <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Find a Rental</a></li>
-            <li><a href="#">List Your Property</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Why Book With Us</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Travel Stories</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FAQS</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Find a Rental</a></li>
+                <li><a href="#">List Your Property</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Why Book With Us</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Travel Stories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQS</a></li>
             </ul>
         </nav>
 
-  
         <p class="footer-text">
             Discover handpicked hotels, villas, and vacation homes from around the world.
         </p>
 
-
         <div class="footer-columns">
             <div>
-            <h4>Hotels</h4>
-            <ul>
-                <li><a href="#">The Azure Grand Hotel</a></li>
-                <li><a href="#">Horizon View Boutique</a></li>
-                <li><a href="#">Seaside Plaza Inn</a></li>
-                <li><a href="#">The Urban Retreat</a></li>
-                <li><a href="#">Alpine Crerst Hotel</a></li>
-            </ul>
+                <h4>Hotels</h4>
+                <ul>
+                    <li><a href="#">The Azure Grand Hotel</a></li>
+                    <li><a href="#">Horizon View Boutique</a></li>
+                    <li><a href="#">Seaside Plaza Inn</a></li>
+                    <li><a href="#">The Urban Retreat</a></li>
+                    <li><a href="#">Alpine Crerst Hotel</a></li>
+                </ul>
             </div>
 
             <div>
-            <h4>Villas</h4>
-            <ul>
-                <li><a href="#">Villa Solara</a></li>
-                <li><a href="#">Casa Del Mare</a></li>
-                <li><a href="#">Villa Toscana</a></li>
-                <li><a href="#">The Palm Heaven</a></li>
-                <li><a href="#">Serenity Hill   Villa</a></li>
-            </ul>
+                <h4>Villas</h4>
+                <ul>
+                    <li><a href="#">Villa Solara</a></li>
+                    <li><a href="#">Casa Del Mare</a></li>
+                    <li><a href="#">Villa Toscana</a></li>
+                    <li><a href="#">The Palm Heaven</a></li>
+                    <li><a href="#">Serenity Hill Villa</a></li>
+                </ul>
             </div>
 
             <div>
-            <h4>Beach Houses</h4>
-            <ul>
-                <li><a href="#">Driftwood Sands House</a></li>
-                <li><a href="#">Ocean Pearl Retreat</a></li>
-                <li><a href="#">Blue Horizon Cottege</a></li>
-                <li><a href="#">The Coastal Heaven</a></li>
-                <li><a href="#">Sea Whisper Beach House</a></li>
-            </ul>
+                <h4>Beach Houses</h4>
+                <ul>
+                    <li><a href="#">Driftwood Sands House</a></li>
+                    <li><a href="#">Ocean Pearl Retreat</a></li>
+                    <li><a href="#">Blue Horizon Cottege</a></li>
+                    <li><a href="#">The Coastal Heaven</a></li>
+                    <li><a href="#">Sea Whisper Beach House</a></li>
+                </ul>
             </div>
 
             <div>
-            <h4>Cabins</h4>
-            <ul>
-                <li><a href="#">Whispering Pines Cabin</a></li>
-                <li><a href="#">Timber Trail Lodge</a></li>
-                <li><a href="#">The Cozy Ceder</a></li>
-                <li><a href="#">The Mountain Mist Retreat</a></li>
-                <li><a href="#">WildWood Ridge Cabin</a></li>
-            </ul>
+                <h4>Cabins</h4>
+                <ul>
+                    <li><a href="#">Whispering Pines Cabin</a></li>
+                    <li><a href="#">Timber Trail Lodge</a></li>
+                    <li><a href="#">The Cozy Ceder</a></li>
+                    <li><a href="#">The Mountain Mist Retreat</a></li>
+                    <li><a href="#">WildWood Ridge Cabin</a></li>
+                </ul>
             </div>
 
             <div>
-            <h4>Apartments</h4>
-            <ul>
-                <li><a href="#">Skyline View Suites</a></li>
-                <li><a href="#">Metro Stay Apartments</a></li>
-                <li><a href="#">The CityLight Loft</a></li>
-                <li><a href="#">HearbourPoint Residences</a></li>
-                <li><a href="#">Central Revenue Flats</a></li>
-            </ul>
+                <h4>Apartments</h4>
+                <ul>
+                    <li><a href="#">Skyline View Suites</a></li>
+                    <li><a href="#">Metro Stay Apartments</a></li>
+                    <li><a href="#">The CityLight Loft</a></li>
+                    <li><a href="#">HearbourPoint Residences</a></li>
+                    <li><a href="#">Central Revenue Flats</a></li>
+                </ul>
             </div>
 
             <div>
-            <h4>Resorts</h4>
-            <ul>
-                <li><a href="#">Coral Bay Resort</a></li>
-                <li><a href="#">Sunset Grove Retreat</a></li>
-                <li><a href="#">Silver Lagoon Resort</a></li>
-                <li><a href="#">The Heaven at Hillside</a></li>
-                <li><a href="#"> Golden Palm Resort</a></li>
-            </ul>
+                <h4>Resorts</h4>
+                <ul>
+                    <li><a href="#">Coral Bay Resort</a></li>
+                    <li><a href="#">Sunset Grove Retreat</a></li>
+                    <li><a href="#">Silver Lagoon Resort</a></li>
+                    <li><a href="#">The Heaven at Hillside</a></li>
+                    <li><a href="#"> Golden Palm Resort</a></li>
+                </ul>
             </div>
         </div>
 
-    
         <div class="footer-bottom">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms</a>
             <a href="#">Sitemap</a>
         </div>
-        
+
         <div class="owner-2025">
             <span>© 2026 OwnerDirect</span>
         </div>
-
     </footer>
 
-   
+    <!-- IMAGE MODAL -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+
+        <div class="modal-content">
+            <div class="slider-wrapper">
+
+                <button class="nav-btn left" id="prevBtn">&#10094;</button>
+
+                <img src="static/shorline-tower-beach-front.jpg" class="slide active">
+                <img src="static/shoreline1.jpg" class="slide">
+                <img src="static/shoreline2.jpg" class="slide">
+                <img src="static/shoreline3.jpg" class="slide">
+                <img src="static/shoreline4.jpg" class="slide">
+                <img src="static/shoreline5.jpg" class="slide">
+                <img src="static/shoreline6.jpg" class="slide">
+                <img src="static/shoreline7.jpg" class="slide">
+                <img src="static/shoreline8.jpg" class="slide">
+                <img src="static/shoreline9.jpg" class="slide">
+                
+                <button class="nav-btn right" id="nextBtn">&#10095;</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- GUEST MODAL -->
+    <div id="guestModal" class="guest-modal">
+        <div class="guest-modal-content">
+            <div class="guest-modal-header">
+                <h3>Guests</h3>
+                <span class="guest-close">&times;</span>
+            </div>
+
+            <div class="guest-modal-body">
+                <div class="guest-row">
+                    <div class="guest-label">
+                        <strong>Guests</strong>
+                        <small>Adults and children</small>
+                    </div>
+                    <div class="guest-controls">
+                        <button class="guest-btn" id="guestMinus">-</button>
+                        <span class="guest-count" id="guestCount">3</span>
+                        <button class="guest-btn" id="guestPlus">+</button>
+                    </div>
+                </div>
+
+                <div class="guest-row">
+                    <div class="guest-label">
+                        <strong>Infants</strong>
+                        <small>Under 2 years</small>
+                    </div>
+                    <div class="guest-controls">
+                        <button class="guest-btn" id="infantMinus">-</button>
+                        <span class="guest-count" id="infantCount">1</span>
+                        <button class="guest-btn" id="infantPlus">+</button>
+                    </div>
+                </div>
+
+                <div class="guest-row">
+                    <div class="guest-label">
+                        <strong>Pets</strong>
+                        <small>Service animals welcome</small>
+                    </div>
+                    <div class="guest-controls">
+                        <button class="guest-btn" id="petMinus">-</button>
+                        <span class="guest-count" id="petCount">1</span>
+                        <button class="guest-btn" id="petPlus">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Source of JavaScript Codes -->
+    <script src="script.js"></script>
+
 </body>
-</html> 
+
+</html>
 
 
 
 
 
+<!-- Entire Structure -->
+
+<!-- 
+
+<main class="main">
+  <section class="left">...</section>
+  <section class="right">...</section>
+</main>
+<section class="more-rentals">...</section>
+<footer>...</footer>
 
 
-
-
+-->
