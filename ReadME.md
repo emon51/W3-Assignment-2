@@ -1,34 +1,36 @@
-##Project Summary
-This is a simple responsive web page built using only raw HTML & CSS in a semantic way. The project focuses on layout structure, 
-responsiveness and clean styling without using any JavaScript code or frameworks.
+## Project Summary
+This is a simple responsive web page built using only raw HTML, CSS and JavaScript in a semantic way. The project focuses on layout structure, 
+responsiveness and clean styling.
 
-##Features
+## Features
 - Fully responsive design. 
 - Desktop, Mobile and Tablet layouts. 
 - Sticky sidebar on desktop.
 
-##Technologies Used 
+## Technologies Used 
 - HTML5 
-- CSS3 
+- CSS3
+- JavaScript
 
-##Responsive Behavior
+## Responsive Behavior
 - Desktop : Main content and sticky sidebar.
 - Mobile : Single column layout.
 - Tablet : Two column layout.
 
-##Responsive Breakpoints
+## Responsive Breakpoints
 - Desktop : 1200px <=
 - Mobile : <= 480px
 - Tablet : 768px - 991px
 
-##Project Structure 
+## Project Structure 
 - Project-Folder 
-     - index.html 
+     - index.html
      - base.css 
-     - static 
+     - static
+     - script.js
      - ReadMe
 
-##Key Sections
+## Key Sections
 - Header with navigation
 - Main content area
       - left sections (Covers 75%)
@@ -44,15 +46,15 @@ responsiveness and clean styling without using any JavaScript code or frameworks
 - Footer
 
 
-##How to Run 
-1. Download or clone this project.
+## How to Run 
+1. Download zip file of the project or clone this project.
 2. Open index.html in any modern browser.
 3. Resize the browser to see responsive behavior.
 
-##Learning Outcome 
+## Learning Outcome 
 - Practiced semantic use of HTML5.
 - Improved understanding of Flexbox.
 - Learn about sticky and how to use it properly and why.
 - How to make a web page responsive using media property.
-
+- How to add functionality using JavaScript. 
 
